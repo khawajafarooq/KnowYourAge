@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KnowYourAge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your birth year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jYO-RT-bpF">
+                                <rect key="frame" x="20" y="329" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="hef-Ov-wIT"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2b-4t-Xcr">
+                                <rect key="frame" x="20" y="379" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.54705280069999995" green="0.47633141280000002" blue="0.32859426739999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Know Your Age">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="validateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nYI-DF-nu1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcl-Cb-TKg">
+                                <rect key="frame" x="20" y="429" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7Ri-be-kus"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="troglodyte" translatesAutoresizingMaskIntoConstraints="NO" id="VRl-O5-VG6">
+                                <rect key="frame" x="123.5" y="181" width="128" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW OLD ARE YOU?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jr7-ao-46a">
+                                <rect key="frame" x="104.5" y="140" width="166.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.54705280065536499" green="0.47633141279220581" blue="0.32859426736831665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zcl-Cb-TKg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6qj-c9-7jf"/>
+                            <constraint firstItem="y2b-4t-Xcr" firstAttribute="top" secondItem="jYO-RT-bpF" secondAttribute="bottom" constant="20" id="Bsn-kN-Fr3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zcl-Cb-TKg" secondAttribute="trailing" constant="20" id="CCf-d4-38H"/>
+                            <constraint firstItem="y2b-4t-Xcr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PXa-tt-FNl"/>
+                            <constraint firstItem="jYO-RT-bpF" firstAttribute="top" secondItem="VRl-O5-VG6" secondAttribute="bottom" constant="20" id="PnK-BP-j4b"/>
+                            <constraint firstItem="VRl-O5-VG6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QU9-Zx-yh2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y2b-4t-Xcr" secondAttribute="trailing" constant="20" id="Vn8-yh-EJW"/>
+                            <constraint firstItem="jYO-RT-bpF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="X5g-WG-zWR"/>
+                            <constraint firstItem="VRl-O5-VG6" firstAttribute="top" secondItem="Jr7-ao-46a" secondAttribute="bottom" constant="20" id="YuQ-Yp-a5x"/>
+                            <constraint firstItem="Jr7-ao-46a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bKt-aq-Xeh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jYO-RT-bpF" secondAttribute="trailing" constant="20" id="eN2-Jz-OHI"/>
+                            <constraint firstItem="Zcl-Cb-TKg" firstAttribute="top" secondItem="y2b-4t-Xcr" secondAttribute="bottom" constant="20" id="eNw-1y-8Lb"/>
+                            <constraint firstItem="Jr7-ao-46a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="vTu-5a-4vv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t0F-Us-Id4"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="Zcl-Cb-TKg" id="OJU-cw-A1Y"/>
+                        <outlet property="textField" destination="jYO-RT-bpF" id="U7V-cU-veX"/>
+                        <outlet property="validateButton" destination="y2b-4t-Xcr" id="Q9h-Uk-i3y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479.19999999999999" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="troglodyte" width="128" height="128"/>
+    </resources>
+</document>
