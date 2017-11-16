@@ -16,9 +16,9 @@ do {
   }
 ```
 
-
 ## Demo
-![Alt text](/screenshots/sc1.jpeg?raw=true "Know Your Age Fun App")
+
+<img src="/screenshots/sc1.jpeg" width="425"/> <img src="/screenshots/sc2.jpeg" width="425"/> 
 
 ### Author 🙏🏻
 **Web**: [Khawaja Farooq](http://khawajafarooq.github.io)
