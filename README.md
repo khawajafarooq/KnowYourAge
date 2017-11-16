@@ -18,7 +18,7 @@ do {
 
 ## Demo
 
-<img src="/screenshots/sc1.jpeg" width="425"/> <img src="/screenshots/sc2.jpeg" width="425"/> 
+<img src="/screenshots/sc1.jpeg" width="311" height="616"/> <img src="/screenshots/sc2.jpeg" width="311" height="616"/> 
 
 ### Author 🙏🏻
 **Web**: [Khawaja Farooq](http://khawajafarooq.github.io)
