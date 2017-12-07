@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             let actualAge = try age(from: textField.text)
             resultLabel.text = "Your age is \(actualAge) 🤖"
         } catch {
-            error.alert()
+            error.alert(with: self)
         }
     }
     

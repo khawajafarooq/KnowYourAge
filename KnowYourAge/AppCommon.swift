@@ -28,14 +28,12 @@ extension Int {
 // displaying alert from Error extension
 extension Error {
     
-    func alert() {
+    func alert(with controller: UIViewController) {
         
         let alertController = UIAlertController(title: "Oops ❗️", message: "\(self)", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(okAction)
-        
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.window?.rootViewController?.present(alertController, animated: true, completion: nil)
+        controller.present(alertController, animated: true, completion: nil)
     }
 }
 
