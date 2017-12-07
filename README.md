@@ -12,7 +12,7 @@ Here's a code snippet from the app;
 do {
     let yourAge = try age(from: yearOfBirth)
   } catch { 
-    error.alert()
+    error.alert(with: self)
   }
 ```
 
